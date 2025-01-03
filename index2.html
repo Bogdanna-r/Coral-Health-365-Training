@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coral Health 365 Training - Module 2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-spy="scroll" data-target="#scroll-spy">
+
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="img/logo_c.png" alt="Coral Health 365" width="150" height="auto">
+      <p class="logo-text">Coral Health 365</p>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#Section3" class="dropbtn">Modules</a>
+          <div class="dropdown-content">
+            <a href="index.html">Module 1</a>
+            <a href="index2.html">Module 2</a>
+            <a href="index3.html">Module 3</a>
+          </div>
+        </li>
+        <li><a href="Quize.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="Section1" style="margin-bottom: 300px;">
+      <div class="presentation-container">
+        <div class="image-container">
+          <img src="img/How To Video.png" alt="Emodjy" class="mojy-image" style="width: 550px;">
+        </div>
+        <div class="text-container" style="text-align: center; width: 500px;">
+          <h1 style="color: white; margin-left: 200px; font-size: 2.5em; width: 500px;">Awesome job!</h1>
+          <p style="color: white; margin-left: 200px; margin-bottom: 70px; font-size: 1.5em; width: 500px;">
+            Now, dive into how-to videos that will guide you step-by-step through setting up your account, creating your program, and sharing it with others!
+          </p>
+          <p style="color: white; font-size: 1.0em; margin-left: 200px; margin-bottom: 70px; width: 500px;">
+            <strong>Why is this important for you to know?</strong><br>
+            A smooth and easy account setup helps users get started without frustration, improving retention. We can always share setup videos to guide users, making the process simpler and enhancing their experience.
+            <br><br>
+            Allowing users to create personalized programs keeps them engaged and satisfied. By sharing instructional videos, we help them feel confident in using the app and ensure they get the most out of it.
+            <br><br>
+            By sharing these helpful videos, we improve user experience, increase engagement, and support company growth.
+          </p>
+          <a href="#Section2" class="learn-more-btn" style="margin-left: 200px;" id="learnMoreBtn">Watch Videos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll Down -->
+    <div class="scroll">
+      <div class="scrolldown">
+        <div class="chevrons">
+          <div class="chevrondown"></div>
+          <div class="chevrondown"></div>
+        </div>
+      </div>
+
+      <div class="scrolldown" style="--color: #de595d">
+        <div class="chevrons">
+          <div class="chevrondown"></div>
+          <div class="chevrondown"></div>
+        </div>
+      </div>
+
+      <div class="scrolldown" style="--color: #de595d">
+        <div class="chevrons">
+          <div class="chevrondown"></div>
+          <div class="chevrondown"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll Down End -->
+
+    <section id="Section2" class="sell-phone-videos-section">
+      <h1>Videos</h1>
+      <div class="carousel-container">
+        <button class="carousel-arrow left-arrow" onclick="moveCarousel('prev')">&#9664;</button>
+
+        <div class="sell-phone-videos-cards-container">
+          <div class="sell-phone-videos-card active">
+            <div class="sell-phone-videos-card-video">
+              <video src="videos/video11.mp4" controls></video>
+            </div>
+          </div>
+          <div class="sell-phone-videos-card">
+            <div class="sell-phone-videos-card-video">
+              <video src="videos/video2.mp4" controls></video>
+            </div>
+          </div>
+          <div class="sell-phone-videos-card">
+            <div class="sell-phone-videos-card-video">
+              <video src="videos/video3.mp4" controls></video>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-arrow right-arrow" onclick="moveCarousel('next')">&#9654;</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Scroll to Top Button -->
+  <a href="#home" role="button" class="scrollTop">
+    <svg class="lnr lnr-chevron-up"><use xlink:href="#lnr-chevron-up"></use></svg>
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <article id="wrap">
+      <article id="lightings">
+        <section id="one">
+          <section id="two">
+            <section id="three">
+              <section id="four">
+                <section id="five">
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </article>
+    </article>
+
+    <a href="https://apps.apple.com/ru/app/coral-health/id1560958357" target="_blank">
+      <img src="img/MainApple.png" width="150" height="auto" alt="Module 1 Logo">
+    </a>
+
+    <a href="https://play.google.com/store/apps/details?id=com.coral.club.health" target="_blank">
+      <img src="img/MainGoogle.png" width="150" height="auto" alt="Module 1 Logo">
+    </a>
+    
+    <p>© 2024 Coral Health 365. All rights reserved. <br> Brianna Riapych</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
