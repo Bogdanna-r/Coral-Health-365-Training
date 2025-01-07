@@ -302,7 +302,7 @@ header nav ul li a:hover {
   
 }
 .text-container{
-  /* margin-top: -100px; */
+   /* margin-top: -100px; */
   width: 500px;
 
 }
@@ -1147,92 +1147,148 @@ margin-top: 20px;
 }
 /*----------------------------------------------------------------quize ------------------------------------------*/
 
-#quize-app{
-  display: flex;
+/* New container styles */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  padding: 50px 20px;
 }
 
-.title{
-  font-family: 'Caveat Brush', cursive;
-  margin: 0;
-  margin-top: 20px;
-  font-size: 60px;
-  font-weight: 900;
-  font-style: italic;
-  color:#fad744;
-  text-shadow: 4px 2px 0 #000000;
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding: 50px 20px;
+  overflow: visible;
 }
 
-.quize-section{
-  width: 60%;
-  display: flex;
-  flex-direction: column;
+.swiper .swiper-wrapper {
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.question_section{
-  background-color:#000000;
-  margin-top: 20px;
-  width: 100%;
-  padding: 20px 10px;
-  border-radius: 5px;
-}
-
-.each_question_wrapper{
+.swiper .swiper-slide {
+  position: relative;
+  height: auto;
   display: flex;
   flex-direction: column;
-  color: #fad744;
-  padding: 10px 0 30px 0;
-  border-bottom: 1px solid  rgba(0, 0, 0, 0.6);
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: rgba(102, 102, 102, 0.8);
+  border-radius: 7px;
+  padding: 10px;
+  margin: 0;
+  cursor: grab;
+  user-select: none;
 }
 
-label{
-  padding: 5px;
+.swiper .swiper-slide::before,
+.swiper .swiper-slide::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease;
 }
 
-.options{
-  padding: 5px 0;
-}
-
-.submit_btn_wrapper{
+.swiper .swiper-slide img {
   width: 100%;
-  text-align: center;
-}
-
-.submit_button{
-  background-color: #fad744;
-  border: none;
-  border-radius: 3px;
-  padding: 5px 10px;
-  margin-top: 30px;
-  font-size: 15px;
-  font-weight: 700;
-  color: rgba(10, 10, 10, 0.8);
-  outline: none;
-}
-
-.submit_button:hover{
-  cursor: pointer;
-}
-
-.marks_section{
-  background-color: #fff;
-  position: fixed;
-  width: 150px;
-  height: 200px;
-  right: 90px;
-  top: 115px;
+  height: auto;
+  margin-bottom: 25px;
   border-radius: 5px;
 }
 
-.score_title{
-  padding: 20px;
-  font-size: 16px;
-  font-weight: 400;
+.swiper .swiper-slide h2 {
+  font-size: 200%;
+  line-height: 110%;
+  margin: 0 0 7px 0;
+  color: white;
+  font-family: "Nabla", system-ui;
+  background-color: #111;
+  border-radius: 100%;
 }
 
-.score_count{
-  padding-left: 20px;
-  font-size: 40px;
+.swiper .swiper-slide h4 {
+  font-size: 110%;
+  line-height: 120%;
+  font-weight: 700;
+  margin: 0 0 13px 0;
+  color: #bbb;
+  font-style: italic;
 }
+
+.swiper .swiper-slide figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 0 20px 0;
+  padding-left: 20px;
+  border-left: 1px solid white;
+}
+
+.swiper .swiper-slide figcaption p {
+  color: #999;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Hover effect */
+.swiper .swiper-slide:hover {
+  background: linear-gradient(
+    135deg,
+    #ff1e9c99,
+    #ff1ea499,
+    #ff1fbc99,
+    #ff1fde99,
+    #f620ff99,
+    #c721ff99,
+    #9723ff99,
+    #6a24ff99,
+    #4125ff99,
+    #252aff99,
+    #2641ff99,
+    #2649ff99
+  );
+}
+
+.swiper .swiper-slide:hover::before,
+.swiper .swiper-slide:hover::after {
+  width: 170px;
+  height: 170px;
+  transition: all 0.3s ease;
+}
+
+/* Scrollbar styles */
+.swiper .swiper-scrollbar {
+  --swiper-scrollbar-bottom: 0px;
+  --swiper-scrollbar-size: 10px;
+}
+
+/* Media Queries */
+@media (min-width: 2000px) {
+  .swiper .swiper-slide {
+    padding: 20px;
+  }
+}
+
+@media (max-height: 550px) {
+  .swiper .swiper-slide figcaption p {
+    -webkit-line-clamp: 2;
+  }
+}
+
+@media (max-height: 490px) {
+  .swiper .swiper-slide figcaption p {
+    -webkit-line-clamp: 1;
+  }
+}
+
+@media (max-height: 460px) {
+  .swiper .swiper-slide figcaption p {
+    display: none;
+  }
+  .swiper .swiper-slide h4 {
+    margin: 0;
+  }
+}
+
